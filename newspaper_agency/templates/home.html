@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Automation Agency System</title>
+    <!-- Add any necessary CSS styles here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Newspaper Automation Agency System</h1>
+    <ul>
+        
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'addCustomer' %}">Add Customer</a></li>
+        <li><a href="{% url 'editCustomer' %}">Edit Customer Subscription</a></li>
+        <li><a href="{% url 'addDistributor' %}">Add Distributor</a></li>
+        <li><a href="{% url 'addPublication' %}">Add Publication</a></li>
+        <li><a href="{% url 'editPublication' %}">Edit Publication</a></li>
+        <li><a href="{% url 'withHold' %}">Withhold Customer</a></li>
+        <li><a href="{% url 'allocateArea' %}">Allocate Area</a></li>
+        <li><a href="{% url 'distributorCheck' %}">Distributor Check</a></li>
+        <li><a href="{% url 'distributorPayment' %}">Distributor Payment</a></li>
+        <li><a href="{% url 'customerBills' %}">Customer Bills</a></li>
+        <li><a href="{% url 'viewSummary' %}">View Summary</a></li>
+        <li><a href="{% url 'paymentReceipts' %}">Payment Receipts</a></li>
+        <!-- If 'admin' is meant to be a Django admin link, you don't need to specify it here -->
+    </ul>
+</div>
+
+</body>
+</html>
